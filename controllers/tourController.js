@@ -1,9 +1,9 @@
 const multer = require('multer');
 const sharp = require('sharp');
-const Tour = require('./../models/tourModel');
-const catchAsync = require('./../utils/catchAsync');
+const Tour = require('../models/tourModel');
+const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandler');
-const AppError = require('./../utils/AppError');
+const AppError = require('../utils/AppError');
 
 const multerStorage = multer.memoryStorage();
 const multerFilter = (req, file, cb) => {
