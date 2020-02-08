@@ -3,7 +3,7 @@ const sharp = require('sharp');
 const Tour = require('../models/tourModel');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./factoryHandler');
-const AppError = require('../utils/AppError');
+const AppError = require('../utils/appError');
 
 const multerStorage = multer.memoryStorage();
 const multerFilter = (req, file, cb) => {
